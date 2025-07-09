@@ -1,0 +1,7 @@
+Se o endereço de idade foi atribuído a um ponteiro pt, quais das seguintes expressões são verdadeiras?
+a) idade == &pt
+b) idade == *pt
+c) pt == *idade
+d) pt == &idade
+
+LETRA D.

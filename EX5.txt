@@ -1,0 +1,8 @@
+Quais das seguintes instruções declaram um ponteiro para uma variável float
+a) float *p;
+b) *float p;
+c) int *p; 
+d) float *p = &f;
+e) *p;
+
+letra a e d.

@@ -1,0 +1,16 @@
+Expressão	Correta?	Motivo
+a) p == &i	✅	Comparação válida entre ponteiros
+
+b) *q == &j	❌	int sendo comparado com int*
+
+c) p == &*&i	✅	Equivale a p == &i
+
+d) i = (*&j	❌	Parêntese incompleto → erro de sintaxe
+
+e) i = *&*&j	✅	Correta, resulta em j
+
+f) q = &p	❌	Atribuindo int** a int*
+
+g) i = (*p)++ + *q	✅	Correta, soma e pós-incremento
+
+h) if (p == i) i++	❌	Comparação entre int* e int → tipos incompatíveis

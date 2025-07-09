@@ -1,0 +1,11 @@
+a) int *p;
+	- Declarando que o ponteiro P é inteiro; 
+
+b) cout << *p;
+	- Imprimindo P na tela;
+
+c) *p = x * 5;
+	- Declarando que ponteiro P é x vezes 5;
+
+d) cout<<*(p+1);
+	- Imprimindo o ponteiro de P mais 1.

@@ -1,0 +1,79 @@
+Vamos resolver **cada expressão** com base nas seguintes declarações em C:
+
+```c
+int i = 3;
+int j = 5;
+int *p = &i;
+int *q = &j;
+```
+
+---
+
+### 📘 Referência:
+
+* `p` aponta para `i` → `*p` = `i` = 3
+* `q` aponta para `j` → `*q` = `j` = 5
+* `&i` é o endereço de `i`
+* `&p` é o endereço do ponteiro `p`
+* `**&p` é uma forma indireta de acessar o valor de `i`
+
+---
+
+### ✅ a) `p == &i`
+
+* `p` foi declarado como `p = &i`, então:
+* `p == &i` → **`true`** (ou `1` em C)
+
+**🔸 Resultado: `1`**
+
+---
+
+### ✅ b) `*p - *q`
+
+* `*p` = valor de `i` = 3
+* `*q` = valor de `j` = 5
+* `3 - 5 = -2`
+
+**🔸 Resultado: `-2`**
+
+---
+
+### ✅ c) `**&p`
+
+* `&p` é o endereço do ponteiro `p`
+* `*(&p)` devolve `p`
+* `**&p` = `*p` = valor de `i` = 3
+
+**🔸 Resultado: `3`**
+
+---
+
+### ✅ d) `3 * -*p / (*q) + 7`
+
+Vamos por partes:
+
+* `*p = i = 3` → `-*p = -3`
+* `*q = j = 5`
+* Substituindo:
+
+```
+3 * (-3) / 5 + 7
+= -9 / 5 + 7
+```
+
+Em C, com inteiros, `-9 / 5` = `-1` (divisão truncada para zero em direção ao zero)
+
+* `-1 + 7 = 6`
+
+**🔸 Resultado: `6`**
+
+---
+
+### ✅ Resumo Final:
+
+| Expressão           | Resultado |
+| ------------------- | --------- |
+| a) `p == &i`        | `1`       |
+| b) `*p - *q`        | `-2`      |
+| c) `**&p`           | `3`       |
+| d) `3*-*p/(*q) + 7` | `6`       |
